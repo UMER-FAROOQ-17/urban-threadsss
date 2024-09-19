@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Urban Threads</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add some basic animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease-in-out;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us {
+  padding: 60px 0;
+  background-color: #333333; 
+  color: white;
+}
+
+.contact-us h1 {
+  font-size: 3rem;
+  color: #FFD700; 
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.contact-us form {
+  background-color: #008080;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-us form .form-label {
+  color: white;
+}
+
+.contact-us .btn-primary {
+  background-color: #FFD700; /* Electric Yellow */
+  border-color: #FFD700;
+}
+
+.contact-us .btn-primary:hover {
+  background-color: #FF4500; /* Burnt Orange */
+  border-color: #FF4500;
+}
+
+.map-container {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+  </style>
+</head>
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="about.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">URBAN-THREADS</span>
+        </a>
+    
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="contact us.html" class="nav-link active" aria-current="page">Contact us</a></li>
+          <li class="nav-item"><a href="faq's.html" class="nav-link" >FAQs</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" >About</a></li>
+        </ul>
+      </header>
+  <section class="contact-us" id="contact-us">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8">
+          <h1 class="fade-in">Contact Us</h1>
+          <p class="fade-in">We would love to hear from you! Please reach out to us through the form below or find us on the map.</p>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-6 fade-in">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div class="col-lg-6 fade-in">
+          <div class="map-container" style="border-radius: 10px; overflow: hidden;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26439.036259647208!2d73.36139881816116!3d34.07260228005114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+              1!3m3!1m2!1s0x38dfd4b203243f2b%3A0xe2a84441ca2e0678!2sNathia%20Gali%2C%20Abbottabad%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!
+              5e0!3m2!1sen!2s!4v1720866847645!5m2!1sen!2s"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Add simple fade-in animations on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

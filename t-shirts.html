@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>t-shirts</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff3b2e;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+</style>
+
+<body>
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">URBAN-THREADS</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="contact us.html" class="nav-link">Contact us</a></li>
+      <li class="nav-item"><a href="faq's.html" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+  </header>
+  <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="t-shirts.html" class="nav-link active" aria-current="page">T-Shirts</a></li>
+        <li class="nav-item"><a href="kameez shalwar.html" class="nav-link">Kameez Shalwar</a></li>
+        <li class="nav-item"><a href="pents.html" class="nav-link">Pents/Trousers</a></li>
+        <li class="nav-item"><a href="shoes.html" class="nav-link">Shoes</a></li>
+      </ul>
+    </header>
+  </div>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img\carousel img 1.webp" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img\carousel img 2.webp" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img\carousel img 3.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">POLO-Shirts</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\white and grey polo shirt.webp"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">White and grey polo shirt</h5>
+              <p class="card-text text-muted">Rs: 2999</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\black and red polo t-shirt.webp"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Multi colour polo shirt</h5>
+              <p class="card-text text-muted">Rs: 2999</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\black polo t-shirt.webp"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Black polo shirt</h5>
+              <p class="card-text text-muted">Rs: 2999</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+  
+   <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Casual t-shirts</h2>
+      <div class="row g-4">
+      
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F0090110618LOWER.webp"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Casual white t-shirt</h5>
+              <p class="card-text text-muted">Rs: 1499</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F1029106915_1.webp"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Casual white and blue t-shirt</h5>
+              <p class="card-text text-muted">Rs: 1499</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\casual black t-shirt.webp"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Casual black t-shirt</h5>
+              <p class="card-text text-muted">Rs: 1499</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+   <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Shirts</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\white and black check shirt.webp"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">White and black shirt</h5>
+              <p class="card-text text-muted">Rs: 2000</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\white and grey shirt.webp"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">White and grey shirt</h5>
+              <p class="card-text text-muted">Rs: 2000</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\check shirt.webp"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Check shirt</h5>
+              <p class="card-text text-muted">Rs: 1699</p>
+              <a href="#" class="btn btn-primary">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-2"><u>Social media handles</u></p>
+      <div class="mb-3">
+        <a href="https://wa.link/myl73k" class="text-white mx-2"
+          ><i class="fab fa-whatsapp fa-lg"></i
+        ></a>
+        <a href="https://www.instagram.com/_.u_m_e_r._10?igsh=MTI3cGo4djB1eG1nYQ==" class="text-white mx-2"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+        <a href="https://www.youtube.com/@shkumer1650" class="text-white mx-2"
+          ><i class="fab fa-youtube fa-lg"></i
+        ></a>
+      </div>
+      <p class="mb-0">&copy; 2024 URBAN-THREADS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>

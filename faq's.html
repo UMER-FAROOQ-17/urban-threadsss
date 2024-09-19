@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - URBAN THREADS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-question {
+    display: block;
+    background-color: #008080;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #FFD700;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fafafa;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+}
+
+.faq-answer p {
+    padding: 15px 0;
+    margin: 0;
+    color: #555;
+}
+
+.faq-item input:checked ~ .faq-answer {
+    max-height: 200px; /* Adjust based on content length */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+</style>
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="about.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">URBAN-THREADS</span>
+        </a>
+    
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="contact us.html" class="nav-link">Contact us</a></li>
+          <li class="nav-item"><a href="faq's.html" class="nav-link active" aria-current="page">FAQs</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" >About</a></li>
+        </ul>
+      </header>
+    <section class="faq-section">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-container">
+            <div class="faq-item">
+                <input type="checkbox" id="question1">
+                <label class="faq-question" for="question1">What is URBAN THREADS?</label>
+                <div class="faq-answer">
+                    <p>URBAN THREADS is a clothing brand that offers stylish and affordable clothing for men and boys, including T-shirts, shoes, pants, and kameez shalwar.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="question2">
+                <label class="faq-question" for="question2">What sizes do you offer?</label>
+                <div class="faq-answer">
+                    <p>We offer a wide range of sizes to fit all body types. Please check our size chart on the product pages for specific measurements.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="question3">
+                <label class="faq-question" for="question3">How can I track my order?</label>
+                <div class="faq-answer">
+                    <p>You can track your order using the tracking link provided in the confirmation email. You can also log in to your account and check the order status.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="question4">
+                <label class="faq-question" for="question4">What is your return policy?</label>
+                <div class="faq-answer">
+                    <p>We offer a 30-day return policy. Items must be returned unworn, unwashed, and with all tags attached. For more details, please visit our Returns & Exchanges page.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="question5">
+                <label class="faq-question" for="question5">Do you ship internationally?</label>
+                <div class="faq-answer">
+                    <p>Yes, we ship internationally. Shipping costs and delivery times vary depending on the destination. Please refer to our Shipping Information page for more details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>

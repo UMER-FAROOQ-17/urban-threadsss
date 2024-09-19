@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<style>
+body {
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  background-color: #333333;
+}
+
+
+.bg-header {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #008080;
+
+}
+
+.product-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff3b2e;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .whatsapp-icon {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
+</style>
+<body background="">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="background-color: #333333;" >
+    <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <img src="img\logo.webp" alt="Urban Threads Logo" style="height: 60px; align-items: left;" >
+      <span class="fs-4"><b style="color: white;">URBAN-THREADS</b></span>
+    </a>
+    <ul class="nav nav-pills" style="color: #f4f4f9;">
+      <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="contact us.html" class="nav-link">Contact us</a></li>
+      <li class="nav-item"><a href="faq's.html" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+  </header>
+
+
+  <header class="bg-header text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold" style="color: white;">Discover Your Style</h1>
+      <p class="lead mt-3" style="color: white;">
+        Explore the latest trends and find your perfect outfit today!
+      </p>
+      <a href="#Featured" class="btn btn-light btn-lg mt-4" style="color: #008080;">Shop Now</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills" style="color: #008080;">
+        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="t-shirts.html" class="nav-link">T-Shirts</a></li>
+        <li class="nav-item"><a href="kameez shalwar.html" class="nav-link">Kameez shalwar</a></li>
+        <li class="nav-item"><a href="pents.html" class="nav-link">Pents/Trouser</a></li>
+        <li class="nav-item"><a href="shoes.html" class="nav-link">Shoes</a></li>
+      </ul>
+    </header>
+  </div>
+
+<div class="container-fluid">
+  <img src="img\carousel img 3.webp" alt=""height="600">
+
+</div>
+
+
+  <section class="py-5" id="Featured">
+    <div class="container">
+      <h1 class="text-center fw-bold mb-5" style="background-color: white;">Featured items</h1>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\blue jeans pant.webp"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Blue jeans</h5>
+              <p class="card-text text-muted">Rs: 3000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F0090110915LOWER.webp"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Casual Shirt</h5>
+              <p class="card-text text-muted">Rs: 2000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\brown shorts.webp"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Brown shorts</h5>
+              <p class="card-text text-muted">Rs: 1999</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h1 class="text-center fw-bold mb-5" style="background-color: white;">Exclusive deals</h1>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F1019106618_1.webp"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Blue shirt with white trouser</h5>
+              <p class="card-text text-muted">Rs: 5999</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F1029106915_1.webp"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">White and blue shirt with blue trouser</h5>
+              <p class="card-text text-muted">Rs: 5999</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F1024106618_1.webp"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Blue shirt with blue trouser</h5>
+              <p class="card-text text-muted">Rs: 5999</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <br>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F0090110618LOWER.webp"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">White shirt with black shorts </h5>
+              <p class="card-text text-muted">Rs: 4000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F0359108901LOWER.webp"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Black shirt with black cargo pant</h5>
+              <p class="card-text text-muted">Rs: 5499</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\F0090110915LOWER.webp"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Black shirt with white shorts</h5>
+              <p class="card-text text-muted">Rs: 4999</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h1 class="text-center fw-bold mb-5" style="background-color: white;">Buy 2 get 1 free</h1>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\brown track suit.webp"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Brown track suit</h5>
+              <p class="card-text text-muted">buy 2 get 1 free</p>
+              <p class="card-text text-muted">Rs 7000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\black and grey track suit.webp"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Black and grey track suit</h5>
+              <p class="card-text text-muted">buy 2 get 1 free</p>
+              <p class="card-text text-muted">Rs: 7000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\grey track suit.webp"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Grey track suit</h5>
+              <p class="card-text text-muted">buy 2 get 1 free</p>
+              <p class="card-text text-muted">Rs: 7000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <br>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\black and grey track suit.webp"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Black stripped track suit</h5>
+              <p class="card-text text-muted">buy 2 get 1 free</p>
+              <p class="card-text text-muted">Rs: 7000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\ethelete track suit.webp"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Athelete pro dri-fit track suit</h5>
+              <p class="card-text text-muted">buy 2 get 1 free</p>
+              <p class="card-text text-muted">Rs: 7000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img
+              src="img\burgandy track suit.webp"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Black and burgandy track suit</h5>
+              <p class="card-text text-muted">buy 2 get 1 free</p>
+              <p class="card-text text-muted">Rs: 7000</p>
+              <a href="#" class="btn btn-primary" style="background-color: #008080;">SHOP NOW</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container my-5 fade-in">
+    <h2 class="text-center mb-4" style="background-color: white;">Customer Reviews</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>"Amazing quality and super affordable. URBAN THREADS never disappoints!"</p>
+                        <footer class="blockquote-footer" style="background-color: aqua;">Rayyan, <cite title="Source Title">Regular Customer</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>"I love their variety and the prices are unbeatable. My go-to brand for everyday wear."</p>
+                        <footer class="blockquote-footer" style="background-color: aqua;">Ali khan, <cite title="Source Title">Happy Shopper</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>"Great deals and top-notch quality. Highly recommend URBAN THREADS to everyone."</p>
+                        <footer class="blockquote-footer" style="background-color: aqua;">Abdullah abbasi, <cite title="Source Title">Frequent Buyer</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.link/myl73k" target="_blank">
+  <img src="img\whatsapp logo.png" alt="WhatsApp" style="position:fixed;bottom:20px;right:20px;width:50px;height:50px;z-index:1000;">
+</a>
+
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-2"><u>Social media handles</u></p>
+      <div class="mb-3">
+        <a href="https://wa.link/myl73k" class="text-white mx-2"
+          ><i class="fab fa-whatsapp fa-lg"></i
+        ></a>
+        <a href="https://www.instagram.com/_.u_m_e_r._10?igsh=MTI3cGo4djB1eG1nYQ==" class="text-white mx-2"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+        <a href="https://www.youtube.com/@shkumer1650" class="text-white mx-2"
+          ><i class="fab fa-youtube fa-lg"></i
+        ></a>
+      </div>
+      <p class="mb-0">&copy; 2024 URBAN-THREADS. All rights reserved.</p>
+    </div>
+  </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
